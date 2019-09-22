@@ -7,6 +7,7 @@ object Datafreme_assignment_3 {
 
   def main(args: Array[String]): Unit = {
 
+
     val spark =SparkSession.builder().master("local[*]").appName("ass3").getOrCreate()
 
     val sc=spark.sparkContext
