@@ -24,11 +24,13 @@ object dataframe_during_class {
 
       val spark = SparkSession.builder.master("local[*]").appName("best_product").getOrCreate()
 
-      val sc = spark.sparkContext //for rdd
 
-      val sqlContext = spark.sqlContext //spark sql operations
 
-      import sqlContext.implicits._
+      //val sc = spark.sparkContext //for rdd
+
+      //val sqlContext = spark.sqlContext //spark sql operations
+
+      //import sqlContext.implicits._
 
 
       //val rdd = sc.textFile("file:/Users/ekumari/Desktop/Ekta folder/Venu Class/Dataset/online-retail-dataset.csv")

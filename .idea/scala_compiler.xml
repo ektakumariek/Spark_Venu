@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="spark_new_class,Spark_New_Class" />
+    <profile name="sbt 1" modules="Spark_New_Class,spark_new_class_6213" />
   </component>
 </project>

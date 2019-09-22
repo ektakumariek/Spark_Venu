@@ -4,6 +4,8 @@ import org.apache.spark.sql.SparkSession
 
 import org.apache.spark.sql.functions._
 
+import org.apache.spark.sql._
+
 object Dataframe_assignment_4 {
 
   def main(args: Array[String]): Unit = {
@@ -12,7 +14,7 @@ object Dataframe_assignment_4 {
 
     val spark= SparkSession.builder().master("local[*]").appName("assign4").getOrCreate()
 
-    val sc= spark.sparkContext
+    //val sc= spark.sparkContext
 
     //from customers dataset, find from which country maximum customers coming?
 
