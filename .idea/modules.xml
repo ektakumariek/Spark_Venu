@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spark_New_Class.iml" filepath="$PROJECT_DIR$/.idea/modules/Spark_New_Class.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Spark_New_Class-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Spark_New_Class-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark_new_class-build.iml" filepath="$PROJECT_DIR$/.idea/modules/spark_new_class-build.iml" />
     </modules>
   </component>
 </project>

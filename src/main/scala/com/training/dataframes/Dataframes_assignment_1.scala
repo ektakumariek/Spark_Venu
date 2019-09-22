@@ -34,48 +34,22 @@ object Dataframes_assignment_1 {
 
 
 
-    val input1="file:/Users/ekumari/Desktop/Ektafolder/Venu Class/Dataset/employees.csv"
+    val input1="file:/Users/ekumari/Desktop/Ekta folder/Venu Class/Dataset/employees.csv"
 
     val df1= spark.read.format("csv").option("header","true").option("inferSchema","true").option("deliMeter",",").
      option("dateFormat","yyyy-MM-dd HH:mm:ss").option("escape", "'").load(input1)
-
-    //val firstrec=1
-
-    df1.show()
-
-
-
 
     val withoutSpechar=df1.columns.map(x=>x.replaceAll("[^\\p{L}\\p{Nd}]+",""))
 
       val newDf=df1.toDF(withoutSpechar:_*)
 
-    newDf.select($"LastName",$"FirstName",$"Title")
-
-
-
-    newDf.show()
-
-    //val df2rdd=df1.rdd
-
-   // val newDf=df1.rdd.zipWithIndex().filter(_._2>=firstrec).map(_._1)
-
-    import sqlContext.implicits._
-
-
-
-    //newDf.take(20).foreach(println)
-
-    df1.show()
-
-
-
+    val df2rdd=df1.rdd
 
 
 
     //val cleanData=df2rdd.map(x=> (x.trim().replaceAll("\"", "")).map(x => x.split(","))
 
-    //newDf.select($"LastName").show()
+    newDf.select($"LastName").show()
 
 
 

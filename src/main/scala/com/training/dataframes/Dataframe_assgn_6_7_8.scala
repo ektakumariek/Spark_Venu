@@ -10,7 +10,7 @@ object Dataframe_assgn_6_7_8 {
 
     val spark=SparkSession.builder().master("local[*]").appName("ass5").getOrCreate()
 
-    //val sc=spark.sparkContext
+    val sc=spark.sparkContext
 
     val input1="file:/Users/ekumari/Desktop/Ekta folder/Venu Class/Dataset/orders.csv"
 

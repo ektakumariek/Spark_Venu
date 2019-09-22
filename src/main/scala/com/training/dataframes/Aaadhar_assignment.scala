@@ -10,7 +10,7 @@ object Aaadhar_assignment {
 
     val spark = SparkSession.builder().master("local[*]").appName("Real_Estate").getOrCreate()
 
-    //val sc = spark.sparkContext
+    val sc = spark.sparkContext
 
     val input2 = "file:///Users/ekumari/Desktop/Ektafolder/Venu Class/Dataset/UIDAI-ENR-DETAIL-20170308.csv"
 
