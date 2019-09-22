@@ -16,6 +16,7 @@ object Datafreme_assignment_3 {
 
     val input1="file:/Users/ekumari/Desktop/Ekta folder/Venu Class/Dataset/categories_new.csv"
 
+
     val df1= spark.read.format("csv").option("header","false").option("inferSchema","true").option("deliMeter",",").
       option("dateFormat","yyyy-MM-dd HH:mm:ss").option("escape", "'").load(input1)
 
